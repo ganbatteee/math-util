@@ -30,6 +30,9 @@ public class MathUtil {
 //    }
     
      public static long getFactorial(int n) {
+        if (n < 0 || n > 20) {
+            throw new IllegalArgumentException("Invalid argumnent. N must be from 0 to 20");
+        }
         if (n == 0 || n == 1)
             return 1; //kết thúc cuộc chơi sớm nếu nhân những đầu vào đặc biệt
         return n * getFactorial(n-1); //công thức đệ quy

@@ -41,7 +41,7 @@ public class MathUtilDDTTest {
     public long expected; //kiểu trả về của hàm getF() là long
 
     @Test
-    public void testGetFactorialGivenWrongArgumentThrowsException() {
+    public void testGetFactorialGivenWrongArgumentThrowsException() throws IllegalAccessException {
         Assert.assertEquals(expected, MathUtil.getFactorial(n));
 
     }
